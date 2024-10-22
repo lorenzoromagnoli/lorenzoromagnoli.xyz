@@ -31,7 +31,7 @@ To streamline user experience, we limited multitasking capabilities, allowing on
 
 The map plays a crucial role, serving both functional and decorative purposes. We experimented with various map styles, ultimately opting for a minimalistic design that subtly indicates user location while remaining aesthetically pleasing. Our customized map displays only land and water, resulting in a distinct yet abstract representation of specific areas.
 
-{{< inlineVideo src="/vid/map animation.mp4#t=4" id="foxtron-map" loop="true" controls="true" autoplay="true">}}
+{{< inlineVideo src="/vid/Foxtron-map-animation.mp4#t=4" id="foxtron-map" loop="true" controls="true" autoplay="true">}}
 
 
 For the Driver Information Module (DIM), we aimed to align closely with the Car Status Display (CSD). To showcase the advanced technical capabilities of FOXTRON, we conceptualized an innovative real-time visualization that merges sensor and camera data with map and location information. Our objective was to present key driver information in a clear, straightforward manner while preserving the airy, open ambiance of the selected theme.
