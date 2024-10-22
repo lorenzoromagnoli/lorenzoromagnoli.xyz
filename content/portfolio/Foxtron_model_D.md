@@ -41,7 +41,7 @@ For the Driver Information Module (DIM), we aimed to align closely with the Car 
 
 The result is a beautifully rendered real-time concept that integrates seamlessly with the premium design of the vehicle's interior.
 
-{{< inlineVideo src="/vid/Foxtron-cluster-edited.mov#t=2" id="foxtron-cluster" loop="false" controls="true" autoplay="false">}}
+{{< inlineVideo src="/vid/Foxtron-cluster-edited-small.webm#t=2" id="foxtron-cluster" loop="false" controls="true" autoplay="false">}}
 
 {{< inlineVideo src="/vid/Foxtron-ModelD-HMI.mp4#t=6" id="foxtron-HMI" loop="false" controls="true" autoplay="false">}}
 
