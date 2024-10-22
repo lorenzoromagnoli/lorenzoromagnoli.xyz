@@ -1,0 +1,3 @@
+---
+inShort: "Lorenzo Romagnoli is an interaction designer with a focus on digital media, interfaces, and emerging technologies. Currently leading Human-Machine Interface (HMI) design at Pininfarina, he has over 10 years of experience working on innovative projects, including UX/UI design at Ultimaker and consulting for brands like Arduino. A passionate advocate for open-source tools, Lorenzo regularly teaches and runs workshops across Europe, helping others explore the future of design and technology."
+---

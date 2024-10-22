@@ -1,0 +1,10 @@
+
+{{$imagePath := print "img/" (.Get "src")}}
+
+{{ $image := resources.Get $imagePath}}
+
+
+{{ with $image }}
+  <img class="background-image responsive-img" src="{{ $image.RelPermalink }}">
+{{ end }}
+

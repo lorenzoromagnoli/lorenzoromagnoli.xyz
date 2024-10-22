@@ -1,0 +1,27 @@
+<!-- <section class="footer bg-black">
+	<div class="container">
+		<div class="row">
+			<div class="span-7 mobile-12 ">
+				<strong>lorenzormgnl@gmail.com</strong>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<div id="portfolioItemPopup" class="portfolioItemPopup hidden">
+	ciao
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/fitvids@2.1.1/dist/fitvids.min.js"></script>
+<script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+
+
+{{ $js := resources.Get "js/main.js" }}
+<script src="{{ $js.Permalink }}"></script>
+
+
+  </body>
+</html>

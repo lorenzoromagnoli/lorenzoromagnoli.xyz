@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+{{ partial "navBar.html" . }}
+
+<div class=" wrapper flex flex-column">
+	<div class="navbar-spacer">
+	</div> 
+	<div class="popup" id="content">
+        <div class="project-container wrapper flex flex-column">
+
+            <div class="project-header flex flex-row">
+                <h2 class="projectTitle">About</h2>
+                <div class="close-btn">
+                </div>
+            </div>
+
+
+
+                <div class="summary">{{.Params.inShort}}</div>
+
+        </div>	
+	</div>
+</div>
+{{ partial "footer" . }}
+

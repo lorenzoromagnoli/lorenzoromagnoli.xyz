@@ -1,0 +1,36 @@
+<div class="portfolio-item-list flex flex-column">
+  
+    <div class="projectLink">
+        <div class="date">
+            <span class="small-label">
+                {{.Scratch.Get "year"}}
+            </span>
+        </div>
+        <div class="link">
+            <a class="internal-link" href="{{.Scratch.Get "projectLink"}}">
+                {{.Scratch.Get "title"}}
+            </a>
+            <object data="/vectors/arrow30.svg" width="30" height="30" type="image/svg+xml"> </object>
+
+        </div>
+    </div>
+    
+
+    <div class="banner hidden">
+        {{if eq (.Scratch.Get "bannerType") "video"}}
+                <video 
+                class="responsive-img {{.Scratch.Get "bannerStyle"}}" 
+                style="background-color:{{.Scratch.Get "backgroundColor"}}" 
+                autoplay="true" 
+                loop="true" 
+                muted>
+                    <source type="video/webm" src="/vid/{{.Scratch.Get "banner"}}">
+                </video>  
+        {{end}}
+       
+        {{if eq (.Scratch.Get "bannerType") "image"}}
+            {{$imageName := .Scratch.Get "banner"}}
+            {{ partial "responsiveBackgroundImage.html" (dict "imageName" $imageName) }}
+        {{end}}
+    </div>
+</div>

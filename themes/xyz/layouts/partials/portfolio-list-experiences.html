@@ -1,0 +1,62 @@
+<section id="experience" class="wrapper">
+{{ range where $.Data.Pages "Section" "experiences" }}
+	{{ range .Pages }}	
+
+		{{ if eq .Params.isCurrent true}}
+			{{ .Scratch.Set "title" .Params.title }}
+			{{ .Scratch.Set "year" .Params.year }}
+			{{ .Scratch.Set "inShort" .Params.inShort }}
+			{{ .Scratch.Set "readMore" .Params.readMore }}
+			{{ .Scratch.Set "isCurrent" .Params.isCurrent }}
+			{{ .Scratch.Set "projectLinks" .Params.projectLinks }}
+			{{ .Scratch.Set "bannerType" .Params.bannertype }}
+			{{ .Scratch.Set "banner" .Params.banner }}
+			{{ partial "portfolioItem.html" . }}
+		{{ end }}
+	{{ end }}
+
+	<div class="navbar-spacer spacer-with-Border flex flex-row">
+		<div class="section-separator">
+			<h1>In the past</h1>
+			<object data="/vectors/arrow80.svg" width="80" height="80"> </object>
+		</div>
+	</div>
+	{{ range .Pages }}	
+		{{ if eq .Params.isCurrent false}}
+			{{ .Scratch.Set "title" .Params.title }}
+			{{ .Scratch.Set "year" .Params.year }}
+			{{ .Scratch.Set "inShort" .Params.inShort }}
+			{{ .Scratch.Set "readMore" .Params.readMore }}
+			{{ .Scratch.Set "isCurrent" .Params.isCurrent }}
+			{{ .Scratch.Set "projectLinks" .Params.projectLinks }}
+			{{ .Scratch.Set "bannerType" .Params.bannertype }}
+			{{ .Scratch.Set "bannerStyle" .Params.bannerStyle }}
+			{{ .Scratch.Set "backgroundColor" .Params.backgroundColor }}
+			{{ .Scratch.Set "banner" .Params.banner }}
+			{{ partial "portfolioItem.html" . }}
+		{{ end }}
+	{{ end }}
+{{ end }}
+
+	<section id="archive" class="flex flex-column">
+		<div class="navbar-spacer spacer-with-Border flex flex-row">
+			<div class="section-separator">
+				<h1>Archive</h1>
+				<object data="/vectors/arrow80.svg" width="80" height="80"> </object>
+			</div>
+		</div>
+		<div class="experience-list">
+		{{ range where $.Data.Pages "Section" "portfolio" }}
+			{{ range .Pages }}	
+					{{ .Scratch.Set "title" .Params.title }}
+					{{ .Scratch.Set "year" .Params.year }}
+					{{ .Scratch.Set "inShort" .Params.inShort }}
+					{{ .Scratch.Set "projectLink" .Permalink }}
+					{{ .Scratch.Set "bannerType" .Params.bannertype }}
+					{{ .Scratch.Set "banner" .Params.banner }}
+					{{ partial "portfolioListItem.html" . }}
+			{{ end }}
+		{{ end }}
+	</div>
+	</section>
+</section>
