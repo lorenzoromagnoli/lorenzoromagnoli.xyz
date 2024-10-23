@@ -21,7 +21,7 @@
 			<object data="/vectors/arrow80.svg" width="80" height="80"> </object>
 		</div>
 	</div>
-	{{ range .Pages }}	
+	{{ range .Pages.ByParam "year"}}	
 		{{ if eq .Params.isCurrent false}}
 			{{ .Scratch.Set "title" .Params.title }}
 			{{ .Scratch.Set "year" .Params.year }}
@@ -47,7 +47,7 @@
 		</div>
 		<div class="experience-list">
 		{{ range where $.Data.Pages "Section" "portfolio" }}
-			{{ range .Pages }}	
+			{{ range (.Pages.ByParam "year").Reverse }}	
 					{{ .Scratch.Set "title" .Params.title }}
 					{{ .Scratch.Set "year" .Params.year }}
 					{{ .Scratch.Set "inShort" .Params.inShort }}

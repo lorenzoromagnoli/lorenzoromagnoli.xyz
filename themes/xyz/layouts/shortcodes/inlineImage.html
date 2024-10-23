@@ -3,8 +3,14 @@
 
 {{ $image := resources.Get $imagePath}}
 
+{{ $backgroundColor := .Get "backgroundColor"}}
+
 
 {{ with $image }}
-  <img class="background-image responsive-img" src="{{ $image.RelPermalink }}">
+  <img 
+  class="background-image responsive-img" 
+  src="{{ $image.RelPermalink }}" 
+  style="background-color: {{ $backgroundColor}};"
+  >
 {{ end }}
 

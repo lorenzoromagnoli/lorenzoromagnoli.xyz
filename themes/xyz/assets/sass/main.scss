@@ -572,22 +572,16 @@ footer {
   border-radius: 100px !important;
 }
 
-#archive{
-  height: 100vh;
-
-  .experience-list{
-    flex: 1 0 0;
-    align-self: stretch;
-  }
-}
 .portfolio-item-list{
   .banner{
     display: none;
-    position: absolute;
-    width: 70%;
+    position: fixed;
+    width: 60%;
     z-index: -10;
     right: $pageMargin;
-    translate: 0 -50%;
+    bottom: $pageMargin;
+
+   // translate: 0 -50%;
   }
   &:hover{
     .banner{

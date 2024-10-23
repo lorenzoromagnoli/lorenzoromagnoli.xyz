@@ -1,11 +1,10 @@
 
 function closePageOverlay(event) {
     $("#portfolioItemPopup").toggleClass("hidden")
+    destroyVideoJS()
 }
 
 function openPageOverlay(event) {
-    
-
     let target = $( event.target );
     let link= target.attr('href');
 
@@ -32,24 +31,34 @@ function startScrolling(){
     }
 }
 
+let initializedVideos=[]
+
+function destroyVideoJS(){
+    for (let i=0; i<initializedVideos.length; i++){
+        var player = videojs(initializedVideos[i]);
+        player.dispose()
+    }
+    initializedVideos=[]
+} 
+
+
 function initVideoJS(){
     $(".video-js").each(function (videoIndex) {
 
         var videoId = $(this).attr("id");
+
+        initializedVideos.push(videoId)
+
         var loop = $(this).data("loop");
         var autoplay = $(this).data("autoplay");
         var controls = $(this).data("controls");
-
-        videojs(videoId,{
+        let v = videojs(videoId,{
             autoplay: autoplay,
             controls: controls,
             fluid: true,
             loop: loop,
             //fill: true,
             inactivityTimeout: 0
-
-
-
         }).ready(function(){
             this.on("play", function(e) {
                 //pause other video
@@ -59,8 +68,9 @@ function initVideoJS(){
                     }
                 });
             });
-    
         });
+
+
     });
     
 

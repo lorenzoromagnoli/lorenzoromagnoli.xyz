@@ -27,25 +27,20 @@ Project Square is an open education initiative that makes it easy and fun for ed
 
 The toolkit, designed to be used in group activities in class, is made of simple materials which are easy reproducible in any school. It comes with a set of exercises and activities built on the most fundamental comcept of computation like sequences, algorithms and conditions.
 
-{{< fullwidth >}}
-	{{< inlineImage src="square1.jpg" width="10" offset="0" >}}
-  {{< inlineImage src="square2.jpg" width="5" offset="2" >}}
-  {{< inlineImage src="square3.jpg" width="4" offset="0" >}}
-  {{< inlineImage src="square7.jpg" width="5" offset="0" >}}
-  {{< inlineImage src="square8.jpg" width="5" offset="0" >}}
-{{< /fullwidth >}}
+{{< inlineImage src="square1.jpg" >}}
+{{< inlineImage src="square2.jpg" >}}
+{{< inlineImage src="square3.jpg" >}}
+{{< inlineImage src="square7.jpg" >}}
+{{< inlineImage src="square8.jpg" >}}
 
 From the beginning we wanted the kit to be a platform able to support educators in ideatining developing, and sharing new activities with a wider network. Because of this, from the beginning of the process we tried to involved in our process as many educators, technology experts and kids as possible. At each iterations we ran several creative sessions to evaluate our design and ideate new activities.
 
-{{< fullwidth >}}
-  {{< inlineImage src="square10.jpg" width="6" offset="1" >}}
-  {{< inlineImage src="square11.jpg" width="4" offset="0" >}}
-  <!-- {{< inlineImage src="/assets/img/square12.png" width="8" offset="2" >}} -->
+{{< inlineImage src="square10.jpg" >}}
+{{< inlineImage src="square11.jpg" >}}
 
-  {{< inlineImage src="/assets/img/square4.jpg" width="5" offset="0" >}}
-  {{< inlineImage src="/assets/img/square5.jpg" width="6" offset="0" >}}
-  {{< inlineImage src="/assets/img/square6.jpg" width="10" offset="2" >}}
-{{< /fullwidth >}}
+{{< inlineImage src="square4.jpg" >}}
+{{< inlineImage src="square5.jpg" >}}
+{{< inlineImage src="square6.jpg" >}}
 
 The Square playful learning starter kit is released under the Creative Commons License, CC BY-NC-SA, allowing anyone to use, adapt and distribute its contents non-commercially by mentioning Project Square, [www.projectsquare.cc](www.projectsquare.cc) and We Are Play Lab Foundation, [www.wap.rocks](www.wap.rocks).
 

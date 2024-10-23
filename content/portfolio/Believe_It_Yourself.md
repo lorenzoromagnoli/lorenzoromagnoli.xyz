@@ -19,7 +19,7 @@ Moreover, with enough examples, we can train a tool or a 'machine' to recognize 
 
 But what if we would train machines to measure even more unmeasurable, personal and culturally driven things? If we gather enough samples could we detect signs that prove and detect our superstitions? and can we use that to build tools and devices that reflect our own beliefs?
 
-{{< inlineVideo type="vimeo" id="340687631" ratio="4-3">}}
+{{< inlineVideo type="vimeo" videoId="340687631" ratio="4-3">}}
 
 We worked with experts in fortune telling from Italy, geomancy from China  and numerology from India to translate their knowledge and beliefs into 0100110010. With BIY™ you can tinker with cameras that can see luck, microphones that interpret your destiny, and compasses that can point you to harmony and balance.
 
@@ -27,9 +27,9 @@ As we tend to believe what machines say without often questioning them, now we c
 
 {{< inlineImage src="BIY_posters.png"  >}}
 
-{{< inlineVideo type="vimeo" id="339397318" ratio="16-9" >}}
-{{< inlineVideo type="vimeo" id="339397826" ratio="16-9" >}}
-{{< inlineVideo type="vimeo" id="339396770" ratio="16-9" >}}
+{{< inlineVideo type="vimeo" videoId="339397318" ratio="16-9" >}}
+{{< inlineVideo type="vimeo" videoId="339397826" ratio="16-9" >}}
+{{< inlineVideo type="vimeo" videoId="339396770" ratio="16-9" >}}
 
 
 {{< inlineImage src="BIY_MOVE_HAND.jpg" width="6" offset="0" >}}

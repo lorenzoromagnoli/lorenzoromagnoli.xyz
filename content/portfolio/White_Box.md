@@ -25,10 +25,7 @@ gallery:
 Result of collaborative design sprint inside [Casa Jasmina](http://casajasmina.cc/) with [automato.farm](http://www.automato.farm) the white Box is a new concept for a home control system that would be "transparently smart" to its user.
 During this 3 days thinking and hacking session we asked ourselves how "smart" can a home be? What kind of smartness are we talking about? Is technology in service of the user or is it becoming the controller of the user?
 
-{{< fullwidth >}}
-
-{{< inlineImage src="/assets/img/whitebox1.jpg" width="12" offset="0" >}}
-{{</ fullwidth >}}
+{{< inlineImage src="whitebox1.jpg" >}}
 
 At the moment, If you want to make your home “smart”, most solutions in the market come in form of a black box that takes care of everything for you.
 Something that doesn’t have to be touched, with a simple and slick UI, something that feels almost magic, but utterly opaque.
@@ -38,11 +35,9 @@ We tried to speculate on the topic designing a new interface called “THE WHITE
 The white box, is a transparent interface to tweak your home behavior;
 It is accessible in the same way you can control the main electric switch box at your home, and you can tweak the experience by accessing simple sliders.
 
+{{< inlineImage src="whitebox03.jpg" >}}
 
-{{< fullwidth >}}
-	{{< inlineImage src="/assets/img/whitebox03.jpg" width="9" offset="0" >}}
-	{{< inlineImage src="/assets/img/whitebox4.jpg" width="9" offset="0" >}}
-{{< /fullwidth >}}
+{{< inlineImage src="whitebox4.jpg" >}}
 
 The white box expose the user with a higher level of intelligence than a simple control interface.
 It’s an evolution of the “backend” of an home of the future, a switchboard, allowing people to turn on and off and tweak the new inputs and outputs that a home of the future will have.

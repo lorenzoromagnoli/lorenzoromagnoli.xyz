@@ -3,7 +3,7 @@ weight: 12
 title: "Shiny handbags"
 bannertype: video
 banner: ks.mov
-year: 2011
+year: 2017
 clientLink: "#"
 size: 6
 height: 2
@@ -12,16 +12,11 @@ video: http://www.youtube.com/embed/ikYDcDEey-E
 inShort: "The handbags for Kate Spade expresses playfulness through strong concepts. We explored how natural interactions, i.e. a touch, a motion could enhance different novelty bags."
 draft: false
 role: Interaction Design, prototyping
+client: Kate Spade
 
 ---
-{{< fullwidth >}}
-	{{< inlineVideo type="youtube" id="QrdxH_bXi5g" width="12" offset="0" >}}
-{{< /fullwidth >}}
+{{< inlineVideo type="youtube" videoId="QrdxH_bXi5g" ratio="16-9" >}}
 
-{{< fullwidth >}}
-	{{< inlineVideo type="youtube" id="tnFomdIQNhg" width="12" offset="0" >}}
-{{< /fullwidth >}}
+{{< inlineVideo type="youtube" videoId="tnFomdIQNhg" ratio="16-9" >}}
 
-{{< fullwidth >}}
-	{{< inlineVideo type="youtube" id="Ba0yckEyuFM" width="12" offset="0" >}}
-{{< /fullwidth >}}
+{{< inlineVideo type="youtube" videoId="Ba0yckEyuFM" ratio="16-9" >}}

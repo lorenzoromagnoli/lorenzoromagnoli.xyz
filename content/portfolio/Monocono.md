@@ -9,6 +9,7 @@ height: 1
 category: Workshop
 inShort: "Monocono is a do-it-yourself kinetic and programmed artwork. It is a USB powered electronic kit featuring digitally fabricated parts and a programmable board. A potentiometer controls the speed of a small motor that drives two rods and creates the effect of a virtual conic volume."
 role: "pcb design, kit design"
+client: "RE-PROGRAMMED ART"
 gallery:
   - 1:
     img: monocono1.jpg
@@ -40,21 +41,16 @@ gallery:
 
 > The motors drive two rotating rods that draw six truncated cone shapes in space, creating virtual volumes. The speed varies from motor to motor, and as a consequence so does the MONOCONO effect of the six shapes drawn in the air at the sides of the hanging cube.
 
-{{< fullwidth >}}
- {{< inlineImage src="/assets/img/monocono6.jpg" width="12" offset="0" >}}
-{{< /fullwidth >}}
+{{< inlineImage src="monocono6.jpg" width="12" offset="0" >}}
 
 In 2015, Esacono has been realized within the project [Re-programmed art](http://http://www.reprogrammed-art.cc/), a research-action aiming at open sourcing and rediscovering kinetic and programmed art today.
 
 The kit was designed to enable anyone to recreate it's own kinetic sculpture, and to discuss about the meaning of Open Sourcing an Art piece, thus allowing anyone to make copies of it.
 Special attention was given to the design of the PCB, that had to be easy to assemble also for kids and non technical people.
 
-{{< fullwidth >}}
- {{< inlineImage src="/assets/img/monocono2.jpg" width="4" offset="0" >}}
- {{< inlineImage src="/assets/img/monocono3.jpg" width="6" offset="0" >}}
- {{< inlineImage src="/assets/img/monocono4.jpg" width="11" offset="0" >}}
-
-{{< /fullwidth >}}
+{{< inlineImage src="monocono2.jpg" width="4" offset="0" >}}
+{{< inlineImage src="monocono3.jpg" width="6" offset="0" >}}
+{{< inlineImage src="monocono4.jpg" width="11" offset="0" >}} 
 
 To make your own Monocono, visit [www.github.com/casajasmina/monocono](www.github.com/casajasmina/monocono)
 Released under CC license BY SA 4.0
