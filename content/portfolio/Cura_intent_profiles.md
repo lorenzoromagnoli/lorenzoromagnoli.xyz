@@ -1,7 +1,7 @@
 ---
 weight: 5
 title: "Ultimaker Cura Intent profiles"
-year: 2021
+year: 2022
 bannertype: video
 banner: 3DPrinting_1.mp4
 client: Ultimaker
