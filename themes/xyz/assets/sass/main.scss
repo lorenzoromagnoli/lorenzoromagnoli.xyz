@@ -64,6 +64,19 @@ $image-radius:8px;
 ///////////////////////////////////////
 ///////////////////////////////////////
 
+.hidden-on-mobile {
+  @include sm{
+    display: none !important;
+  }
+}
+
+.show-on-mobile {
+  display: none !important;
+  @include sm{
+    display: flex !important;
+  }
+}
+
 h1{
   font-size: 112px;
   font-family: "Krona One";
@@ -81,7 +94,8 @@ h1{
   @include md{
   }
   @include sm{
-    font-size: 90px;
+    font-size: 30px;
+    line-height: 60px;
   }
 }
 
@@ -99,7 +113,8 @@ h2{
   @include md{
   }
   @include sm{
-    font-size: 90px;
+    font-size: 40px;
+    line-height: 50px !important;
   }
 }
 
@@ -117,7 +132,7 @@ h3{
   @include md{
   }
   @include sm{
-    font-size: 90px;
+    font-size: 28px;
   }
 }
 
@@ -254,12 +269,16 @@ body {
   align-items: center;
   align-self: center;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   box-sizing:border-box;
   position: fixed;
   height: $separator-height-without-borders;
   background-color: black;
   z-index: 100;
+
+  @include sm{
+    height: $separator-height-without-borders/2;
+  }
 
 
   .navbar-left, .navbar-center, .navbar-right{
@@ -315,9 +334,22 @@ body {
   flex-basis: $separator-height-without-borders;
   min-height: $separator-height-without-borders;
 
+  @include sm{
+    font-size: 90px;
+    flex-basis: $separator-height-without-borders/2;
+    min-height: $separator-height-without-borders/2;
+  }
+
   &.spacer-with-Border{
     flex-basis: $separator-height-with-borders;
     min-height: $separator-height-with-borders;
+
+    @include sm{
+      flex-basis: $separator-height-with-borders/2;
+      min-height: $separator-height-with-borders/2;
+    }
+
+
   }
   flex-shrink: 0;
 }
@@ -328,16 +360,27 @@ body {
   height: 150px;
   width: 100%;
 
+
+
   align-self: center;
-  justify-content: bottom;
+  justify-content: center ;
 
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
 
+  @include sm{
+    height: 80px;
+  }
 
   h1{
     flex: 1 0 0;
+    margin: 0px;
+  }
+
+    @include sm{
+    font-size: 40px;
+    line-height: 60px;
   }
 }
 
@@ -365,9 +408,21 @@ body {
   padding: $separator-height-without-borders 0;
   height: 100vh;
   box-sizing: border-box;
+
+  @include sm{
+    padding: 20px 0;
+    height: auto;
+  }
+
+
   .horizontalContainer{
     flex-grow: 1;
     gap: $pageMargin;
+
+    @include sm{
+   flex-direction: column-reverse;
+   
+    }
 
   }
   .info{
@@ -382,6 +437,13 @@ body {
     flex-shrink: 2;
     max-height: 100%;
     position: relative;
+
+    @include sm{
+    height: 30vh;
+    flex: auto;
+    }
+
+
 
     video{
       position: absolute;
@@ -399,11 +461,15 @@ body {
     .link{
       display: flex;
       flex-direction: row;
-      align-items: baseline;
       border-top: 1px solid $almost-white;
       border-bottom: 1px solid $almost-white;
       padding-right: 20px;
       transition: .8s all;
+      align-items: center;
+      min-height: 60px;
+      padding-bottom: 5px;
+      
+
       &:hover{
         padding-right: 0px;
         background-color: rgba($color: #b5b5b5, $alpha: .1);
@@ -420,6 +486,10 @@ body {
         color: $almost-white;
         flex: 1 0 0 ;
         text-decoration: none !important;
+
+        @include sm{
+          font-size: 28px;
+        }
       }
     }
   }
@@ -467,6 +537,12 @@ body {
     cursor: pointer;
     width: 80px;
     height: 80px;
+    background-position: center;
+
+    @include sm{
+      width: 50px;
+      height: 50px;
+    }  
 
   }
 }
@@ -489,6 +565,11 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @include sm{
+      font-size: 30px;
+
+    }
   }
   .data-table{
     margin-top: $pageMargin/2;
@@ -577,7 +658,7 @@ footer {
     display: none;
     position: fixed;
     width: 60%;
-    z-index: -10;
+    z-index: 10;
     right: $pageMargin;
     bottom: $pageMargin;
 
@@ -593,10 +674,11 @@ footer {
   .link{
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     border-bottom: 1px solid $almost-white;
     padding-right: 20px;
     transition: .8s all;
+    min-height: 60px;
     &:hover{
       padding-left: 20px;
       background-color: rgba($color: #b5b5b5, $alpha: .1);
@@ -613,6 +695,10 @@ footer {
       color: $almost-white;
       flex: 1 0 0 ;
       text-decoration: none !important;
+
+      @include sm{
+        font-size: 28px;
+      }
     }
   }
 }

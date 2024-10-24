@@ -15,10 +15,12 @@
 		{{ end }}
 	{{ end }}
 
-	<div class="navbar-spacer spacer-with-Border flex flex-row">
+	<div class="navbar-spacer spacer-with-Border flex flex-row hidden-on-mobile">
 		<div class="section-separator">
 			<h1>In the past</h1>
-			<object data="/vectors/arrow80.svg" width="80" height="80"> </object>
+			<object data="/vectors/arrow80.svg" width="80" height="80" class="hidden-on-mobile"> </object>
+			<object data="/vectors/arrow30.svg" width="30" height="30" class="show-on-mobile"> </object>
+
 		</div>
 	</div>
 	{{ range .Pages.ByParam "year"}}	
@@ -39,12 +41,21 @@
 {{ end }}
 
 	<section id="archive" class="flex flex-column">
-		<div class="navbar-spacer spacer-with-Border flex flex-row">
+		<div class="navbar-spacer spacer-with-Border flex flex-row hidden-on-mobile">
 			<div class="section-separator">
 				<h1>Archive</h1>
 				<object data="/vectors/arrow80.svg" width="80" height="80"> </object>
 			</div>
 		</div>
+
+		<div class="flex flex-column show-on-mobile">
+			<div class="info flex flex-column">
+				<h3 class="title">Archive</h3>
+				<p class="summary"> A mixed bag of interactive projects, experiments, tools and visions developed between 2011 and now. </p>
+			</div>
+        </div>
+
+
 		<div class="experience-list">
 		{{ range where $.Data.Pages "Section" "portfolio" }}
 			{{ range (.Pages.ByParam "year").Reverse }}	
