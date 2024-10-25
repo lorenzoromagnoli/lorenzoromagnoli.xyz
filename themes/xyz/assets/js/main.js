@@ -1,6 +1,6 @@
 
 function closePageOverlay(event) {
-    $("#portfolioItemPopup").toggleClass("hidden")
+    $("#portfolioItemPopup").addClass("hidden")
     destroyVideoJS()
 }
 
@@ -9,16 +9,30 @@ function openPageOverlay(event) {
     let link= target.attr('href');
 
       $("#portfolioItemPopup").load(link+" #content", function(){
-        $("#portfolioItemPopup").toggleClass("hidden")
+        $("#portfolioItemPopup").removeClass("hidden")
         initStuffAfterLoad()
+       addState(link)
 
         $(".close-btn").click(function(){
             closePageOverlay()
-        });
-    
+        });    
       });
-
 }
+
+function openPageOverlayByUrl(url) {
+      $("#portfolioItemPopup").load(url+" #content", function(){
+        $("#portfolioItemPopup").toggleClass("hidden")
+        initStuffAfterLoad()
+       //addState(link)
+
+        $(".close-btn").click(function(){
+            closePageOverlay()
+        });    
+      });
+}
+
+
+
 
 function startScrolling(){
     let scrollintText = $(".scrollingText");
@@ -114,12 +128,56 @@ const r = new rive.Rive({
 // }
 
 
+function openPageDependingOnHash(){
+    let hash= window.location.hash.substring(1);
+    if (hash!=''){
+        console.log(hash)
+        let section=hash.split("&")[0];
+        let page=hash.split("&")[1];
+        var baseUrl = window.location.origin;
+    
+        console.log(baseUrl+"/"+section+"/"+page)
+        openPageOverlayByUrl(baseUrl+"/"+section+"/"+page)
+    } 
+    
+
+}
+
+let initStateID=0
+function addState(anchor) {
+    const state = { page_id: initStateID+1};
+    
+    var baseUrl = window.location.origin;
+    let section =anchor.split("/")[1]
+    let page =anchor.split("/")[2]
+
+    console.log(section, page)
+
+    var redirectToURL = baseUrl+"#"+section+"&"+page
+    history.pushState(state, anchor, redirectToURL);
+} 
+
+
+
 
 
 $(document).ready(function () { 
+
+    window.addEventListener(
+        "hashchange",
+        () => {
+          console.log("The hash has changed!");
+          openPageDependingOnHash()
+        },
+        false,
+      );
+
+
     initStuffAfterLoad()
 
 //any link which has the class internal link should open a popup instead of a separate page
+
+    openPageDependingOnHash()
 
     $(".internal-link").click(function(event){
         event.preventDefault()
@@ -130,6 +188,17 @@ $(document).ready(function () {
         closePageOverlay()
     });
 });
+
+
+function redirectToAnchor(anchor) {
+    // We remove previous anchors from the current URL    
+    var redirectToURL = document.URL.replace(/#.*$/, "");
+
+    redirectToURL = redirectToURL + anchor
+    window.location.href = redirectToURL;
+    window.location.reload(true)
+}
+
 
 
 function initStuffAfterLoad(){
