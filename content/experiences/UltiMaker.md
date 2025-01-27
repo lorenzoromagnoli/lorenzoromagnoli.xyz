@@ -14,6 +14,9 @@ readMore: false
 isCurrent: false
 projectLinks:
   - 1:
+    title: UltiMaker design system
+    link: /portfolio/UltiMaker_DS/
+  - 2:
     title: Cura intent profiles
     link: /portfolio/cura_intent_profiles/
   
